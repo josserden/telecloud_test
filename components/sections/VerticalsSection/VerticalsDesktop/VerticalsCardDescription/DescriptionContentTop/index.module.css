@@ -1,0 +1,245 @@
+.descriptionContentTop {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 30px;
+}
+
+.descriptionContentText {
+  width: 40%;
+}
+
+.descriptionTitle {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+
+  font-size: 66px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.titleWrapper {
+  display: flex;
+  gap: 0 20px;
+
+  width: 100%;
+}
+
+.descriptionTitle.active {
+  animation-delay: 500ms;
+}
+
+.descriptionContentTop p {
+  margin: 0;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.descriptionContentTop p.subtitle {
+  max-width: 516px;
+  margin: 0 0 30px 0;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.subtitle.activeSubtitle {
+  animation: 1.5s showSubtitle ease backwards;
+  animation-delay: 800ms;
+}
+
+.description.activeDescription {
+  animation: 1.5s showSubtitle ease backwards;
+  animation-delay: 1000ms;
+}
+
+@keyframes showSubtitle {
+  0% {
+    transform: translateX(-45px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+
+.descriptionSubcategories {
+  align-self: flex-start;
+
+  width: 50%;
+  padding: 35px 41px 30px 41px;
+
+  border-radius: 44px 0;
+  background: var(--achievements-gradient);
+}
+
+.descriptionSubcategories.active {
+  animation: 1.5s ease subcategories-enter forwards;
+  animation-delay: 800ms;
+}
+
+@keyframes subcategories-enter {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.descriptionSubcategories h3 {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  opacity: 0;
+
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.descriptionSubcategories.active h3 {
+  animation-delay: 1.5s;
+}
+
+.descriptionSubcategories ul {
+  margin-top: 30px;
+  margin-left: 20px;
+
+  list-style: disc;
+
+  transition: opacity 1.5s ease;
+
+  opacity: 0;
+  columns: 2;
+}
+
+.descriptionSubcategories.active ul {
+  animation: 1.5s ease showIcon forwards;
+  animation-delay: 1.5s;
+}
+
+.descriptionSubcategories ul li {
+  margin-right: 20px;
+  margin-bottom: 18px;
+
+  list-style-position: outside;
+
+  text-transform: capitalize;
+
+  color: var(--color-light-purple);
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.descriptionSubcategories ul li span {
+  color: var(--color-white);
+}
+
+.descriptionSubcategories ul li:last-child {
+  margin-bottom: 0;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+.icon.activeIcon {
+  animation: 1.5s showIcon ease alternate backwards;
+  animation-delay: 500ms;
+}
+
+@keyframes showIcon {
+  0% {
+    transform: translateX(50px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+
+    opacity: 1;
+  }
+}
+
+.achievement {
+  display: flex;
+
+  width: 199px;
+  height: 199px;
+  margin-right: 22px;
+  padding: 5px;
+
+  border-radius: 50%;
+  background: linear-gradient(137.54deg, #ffd9d9 11.25%, #7000ff 89.51%);
+  filter: drop-shadow(1px 2px 10px rgb(0 0 0 / 0.25));
+}
+
+.achievement:nth-child(2) {
+  margin-right: 0;
+}
+
+.achievement:last-child {
+  margin-top: -90px;
+  margin-right: 0;
+}
+
+.achievementData {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+
+  border-radius: 50%;
+  background: var(--achievements-gradient);
+}
+
+.achievementData h3 {
+  margin: 0;
+
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.achievementData span {
+  display: inline-block;
+
+  max-width: 148px;
+  margin-top: 10px;
+
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 1281px) {
+  .descriptionContentText,
+  .descriptionSubcategories {
+    width: 100%;
+  }
+}

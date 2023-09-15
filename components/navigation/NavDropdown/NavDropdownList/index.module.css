@@ -1,0 +1,38 @@
+.subcategories {
+  --heightList: 0;
+  overflow: hidden;
+
+  max-height: 0;
+  margin-left: 20px;
+
+  list-style: disc;
+
+  transition: max-height 0.3s ease-out;
+}
+
+.subcategories li:first-child {
+  margin-top: 20px;
+}
+
+.subcategories li:last-child {
+  margin-bottom: 0;
+}
+
+.subcategories.active {
+  overflow: visible;
+
+  max-height: var(--heightList);
+
+  transition: max-height 0.3s ease-in;
+}
+
+.subcategories li {
+  margin-bottom: 15px;
+
+  text-align: left;
+  text-transform: capitalize;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}

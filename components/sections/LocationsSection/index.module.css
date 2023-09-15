@@ -1,0 +1,155 @@
+.locations {
+  padding: 100px 0;
+
+  background-color: var(--color-blue);
+}
+
+.locations h2 {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  opacity: 0;
+  color: var(--color-white);
+
+  font-size: 80px;
+  line-height: 1.1;
+}
+
+.locationsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 62px;
+
+  list-style: none;
+  gap: 100px 45px;
+}
+
+.bordered {
+  padding: 0 25px;
+
+  border-right: 1px solid var(--color-white);
+  border-left: 1px solid var(--color-white);
+}
+
+.rightBorder {
+  padding-right: 25px;
+
+  border-right: 1px solid var(--color-white);
+}
+
+.locationsItem {
+  transition: transform 0.55s ease, opacity 0.35s ease-in-out;
+
+  opacity: 0;
+}
+
+.locationsItem.active {
+  transform: translateX(0);
+
+  opacity: 1;
+}
+
+.smallX {
+  transition-delay: 1.3s;
+  transform: translateX(-100px);
+}
+
+.middleX {
+  transition-delay: 1.5s;
+  transform: translateX(-120px);
+}
+
+.largeX {
+  transition-delay: 1.7s;
+  transform: translateX(-140px);
+}
+
+.largeXL {
+  transition-delay: 1.9s;
+  transform: translateX(-160px);
+}
+
+.largeXXL {
+  transition-delay: 2.1s;
+  transform: translateX(-180px);
+}
+
+@media screen and (max-width: 1281px) {
+  .locations {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .locationsList {
+    justify-content: flex-start;
+    gap: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .locations {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    border-radius: 44px 0;
+  }
+
+  .locationsItem {
+    width: 100%;
+  }
+
+  .locations h2 {
+    text-align: center;
+    letter-spacing: 0;
+
+    font-size: 60px;
+  }
+
+  .locationsContent {
+    margin: 0;
+  }
+
+  .bordered,
+  .rightBorder {
+    padding: 0;
+
+    border: none;
+  }
+
+  .locationsList {
+    margin-top: 60px;
+
+    transform: scaleY(1);
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .locations {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .locations h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .locations {
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .locations h2 {
+    font-size: 39px;
+  }
+
+  .locationsList {
+    margin-top: 30px;
+  }
+}

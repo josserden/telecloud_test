@@ -1,0 +1,76 @@
+.LogoListSection {
+  padding: 100px 0;
+}
+
+.heading {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  color: var(--color-gray);
+
+  font-size: 77px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.logoList {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-top: 60px;
+
+  list-style: none;
+  gap: 60px 0;
+}
+
+.logoListItem {
+  width: 25%;
+}
+
+.logoListItem img {
+  display: block;
+
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1025px) {
+  .LogoListSection {
+    padding: 60px 22px;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .logoList {
+    gap: 30px;
+  }
+
+  .logoListItem {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .heading {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .heading {
+    font-size: 35px;
+  }
+
+  .logoList {
+    padding-top: 40px;
+  }
+
+  .LogoListSection {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}

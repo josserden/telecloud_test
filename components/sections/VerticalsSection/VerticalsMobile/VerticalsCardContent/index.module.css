@@ -1,0 +1,123 @@
+.verticalCardContentDescription {
+  display: none;
+  overflow: hidden;
+
+  max-height: 0;
+
+  transition: max-height 0.3s ease-out;
+
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.verticalCardContentDescription.active {
+  --height: 0;
+  max-height: var(--height);
+
+  transition: max-height 0.3s ease-in;
+}
+
+.achievementsTitle {
+  margin: 0;
+  margin-top: 50px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.dropdownBtn {
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+
+  color: var(--color-white);
+  border: none;
+  background: none;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.verticalCardContentDescription p.subtitle {
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.verticalCardContentDescription p {
+  margin: 20px 0 0 0;
+
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.subcategories {
+  --heightList: 0;
+  overflow: hidden;
+
+  max-height: 0;
+  margin-top: 30px;
+  margin-left: 20px;
+
+  list-style: disc;
+  list-style-position: outside;
+
+  transition: max-height 0.3s ease-out;
+  text-align: left;
+
+  color: var(--color-light-blue);
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 293px;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  list-style: none;
+  gap: 16px;
+}
+
+.subcategories.active {
+  overflow: visible;
+
+  max-height: var(--heightList);
+
+  transition: max-height 0.3s ease-in;
+}
+
+.subcategories li {
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.subcategories li:last-child {
+  margin-bottom: 50px;
+}
+
+.subcategories li span {
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 1025px) {
+  .verticalCardContentDescription {
+    display: block;
+
+    padding: 0 25px;
+  }
+}

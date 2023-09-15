@@ -1,0 +1,56 @@
+.achievements li:first-child {
+  margin-top: 20px;
+}
+
+.achievements li:last-child {
+  margin-bottom: 0;
+}
+
+.achievements {
+  --heightAchievements: 0;
+  overflow: hidden;
+
+  max-height: 0;
+
+  transition: max-height 0.3s ease-out;
+}
+
+.achievements.active {
+  max-height: var(--heightAchievements);
+
+  transition: max-height 0.3s ease-in;
+}
+
+.achievements li {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 15px;
+
+  text-align: left;
+
+  line-height: 1.5;
+  gap: 0 5px;
+}
+
+.achievements li span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.achievements li span.achievementsDescription {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 481px) {
+  .achievements li span {
+    font-size: 20px;
+  }
+}

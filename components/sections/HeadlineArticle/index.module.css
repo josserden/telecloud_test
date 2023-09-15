@@ -1,0 +1,139 @@
+.headline {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 60px;
+  padding: 89px 0;
+
+  border-radius: 100px 0;
+  background: var(--verticals-gradient);
+  gap: 0 55px;
+}
+
+.headlineSection {
+  padding: 100px 0;
+}
+
+.heading {
+  margin: 0;
+
+  text-transform: uppercase;
+
+  opacity: 0;
+  color: var(--color-gray);
+
+  font-size: 77px;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.headlineText {
+  max-width: 640px;
+}
+
+.headline .headlineText h2 {
+  margin: 0 0 38px 0;
+
+  letter-spacing: 0;
+  text-transform: uppercase;
+
+  opacity: 0;
+  color: var(--color-white);
+
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.headline .headlineText p {
+  margin: 0;
+
+  transition: transform 1s ease, opacity 1s ease;
+  transition-delay: 0.5s;
+  transform: translateX(-45px);
+
+  opacity: 0;
+  color: var(--color-white);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.headlineSection.active .headlineText p {
+  transition-delay: 1.3s;
+  transform: translateX(0);
+
+  opacity: 1;
+}
+
+.headline img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 1281px) {
+  .headline {
+    justify-content: space-between;
+
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .headlineSection {
+    padding: 60px 0;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .headline {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+
+    padding: 60px;
+
+    border-radius: 44px 0;
+  }
+
+  .headline .headlineText h2 {
+    margin: 30px 0;
+
+    text-align: center;
+
+    font-size: 60px;
+  }
+
+  .headline .headlineText p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .heading {
+    font-size: 45px;
+  }
+  .headline .headlineText h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .heading {
+    font-size: 35px;
+  }
+
+  .headline {
+    margin-top: 40px;
+    padding: 20px 19px 60px 19px;
+
+    border-radius: 44px 0;
+  }
+
+  .headline .headlineText h2 {
+    font-size: 39px;
+  }
+}

@@ -1,0 +1,133 @@
+[
+  {
+    "id": 0,
+    "img": "https://telecloud.b-cdn.net/TCV_Trans.svg",
+    "width": 231,
+    "height": 135,
+    "sWidth": 145,
+    "sHeight": 91
+  },
+  {
+    "id": 1,
+    "img": "https://telecloud.b-cdn.net/W9W_trans.svg",
+    "width": 256,
+    "height": 129,
+    "sWidth": 130,
+    "sHeight": 60
+  },
+  {
+    "id": 10,
+    "img": "https://telecloud.b-cdn.net/Group.svg",
+    "width": 152,
+    "height": 115,
+    "sWidth": 90,
+    "sHeight": 74
+  },
+  {
+    "id": 7,
+    "img": "https://telecloud.b-cdn.net/Agri_Trans.svg",
+    "width": 175,
+    "height": 105,
+    "sWidth": 112,
+    "sHeight": 55
+  },
+  {
+    "id": 8,
+    "img": "https://telecloud.b-cdn.net/Vezium_trans.svg",
+    "width": 261,
+    "height": 68,
+    "sWidth": 135,
+    "sHeight": 30
+  },
+  {
+    "id": 45,
+    "img": "https://telecloud.b-cdn.net/FRAUDBINLOGO_trans.svg",
+    "width": 227,
+    "height": 59,
+    "sWidth": 133,
+    "sHeight": 27
+  },
+  {
+    "id": 11,
+    "img": "https://telecloud.b-cdn.net/Fresca 1_trans.svg",
+    "width": 227,
+    "height": 127,
+    "sWidth": 131,
+    "sHeight": 69
+  },
+  {
+    "id": 4,
+    "img": "https://telecloud.b-cdn.net/OITC_Trans_v1.svg",
+    "width": 206,
+    "height": 149,
+    "sWidth": 128,
+    "sHeight": 80
+  },
+  {
+    "id": 3,
+    "img": "https://telecloud.b-cdn.net/FARM YOUR PASSION_trans.svg",
+    "width": 228,
+    "height": 142,
+    "sWidth": 133,
+    "sHeight": 80
+  },
+
+  {
+    "id": 6,
+    "img": "https://telecloud.b-cdn.net/Startupvested_trans.svg",
+    "width": 203,
+    "height": 135,
+    "gridColStart": 4,
+    "gridColEnd": 6,
+    "sWidth": 117,
+    "sHeight": 75
+  },
+  {
+    "id": 9,
+    "img": "https://telecloud.b-cdn.net/mycashnumber_trans 1.svg",
+    "width": 247,
+    "height": 80,
+    "sWidth": 148,
+    "sHeight": 53
+  },
+  {
+    "id": 5,
+    "img": "https://telecloud.b-cdn.net/nftpu_trans.svg",
+    "width": 141,
+    "height": 167,
+    "sWidth": 88,
+    "sHeight": 105
+  },
+  {
+    "id": 255,
+    "img": "https://telecloud.b-cdn.net/Weprova-Logo-Final.svg",
+    "width": 252,
+    "height": 107,
+    "sWidth": 140,
+    "sHeight": 53
+  },
+  {
+    "id": 2,
+    "img": "https://telecloud.b-cdn.net/Mobilepasse - Logo - Yellow 00 1.svg",
+    "width": 250,
+    "height": 79,
+    "sWidth": 131,
+    "sHeight": 34
+  },
+  {
+    "id": 12,
+    "img": "https://telecloud.b-cdn.net/TML - Logo Square.svg",
+    "width": 228,
+    "height": 99,
+    "sWidth": 129,
+    "sHeight": 51
+  },
+  {
+    "id": 25588,
+    "img": "https://telecloud.b-cdn.net/Byceetouch_trans_1.svg",
+    "width": 133,
+    "height": 126,
+    "sWidth": 84,
+    "sHeight": 79
+  }
+]

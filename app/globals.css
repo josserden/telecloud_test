@@ -1,0 +1,149 @@
+:root,
+*::before,
+*::after {
+  --color-black: #181818;
+  --color-charcoal: #4a4a4a;
+  --bg-dark-gray: #535353;
+  --color-gray: rgb(64 64 64 / 1);
+  --color-white: #ffffff;
+  --color-star-icon-purple: #afc1ff;
+  --color-white-with-opacity: rgb(255 255 255 / 0.85);
+  --color-whitesmoke: #f5f5f5;
+  --color-blue: #3a63f4;
+  --color-blue-opacity: rgb(58 99 244 / 0.7);
+  --color-black-circle-shadow: rgb(0 0 0 / 52%);
+  --color-light-blue: #9eabea;
+  --color-blue-contrast: rgb(28 69 214 / 1);
+  --color-light-purple: #e6e2ff;
+  --verticals-gradient: linear-gradient(
+    110.43deg,
+    rgb(0 0 0 / 0.86) 0%,
+    rgb(58 99 244 / 0.86) 118.84%
+  );
+  --achievements-gradient: linear-gradient(
+    179.95deg,
+    #afc1ff 0.04%,
+    rgb(130 135 255 / 0.64) 71.74%,
+    #3a63f4 125.19%
+  );
+  --bg-color-overlay: rgb(9 11 13 / 0.6);
+  --color-main-circle-shadow: rgb(0 0 0 / 40%);
+  --color-small-circle-shadow: rgb(0 0 0 / 0.22);
+  --color-dot-shadow: rgb(0 0 0 / 0.63);
+  --margin-x: 80px;
+  --padding-y: 70px;
+  --nav-width: 439px;
+  --video-width: 1214px;
+  --hero-width: 1440px;
+  --header-height: 100px;
+}
+
+html,
+body {
+  margin: 0;
+
+  user-select: none;
+
+  background-color: var(--color-white);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.navIsOpen {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.4s ease;
+}
+
+.arrow.desktop {
+  display: flex;
+
+  color: var(--color-black);
+}
+
+.arrow.active {
+  transform: rotate(180deg);
+}
+
+.activeFrameText {
+  animation: 1s enterFrame forwards;
+}
+
+.listToggler {
+  display: flex;
+
+  margin-top: 30px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  background: none;
+}
+
+.togglerHeading {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+
+  text-align: left;
+
+  color: var(--color-black);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  gap: 0 19px;
+}
+
+.fullWidth {
+  position: relative;
+  right: 50%;
+  left: 50%;
+
+  width: 100vw;
+  margin: 0 -50vw;
+}
+
+@keyframes enterFrame {
+  0% {
+    transform: scale(1.1);
+
+    opacity: 1;
+    clip-path: inset(0 0 100% 100%);
+  }
+  100% {
+    transform: scale(1);
+
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  body {
+    overflow: visible;
+  }
+  .arrow {
+    display: flex;
+  }
+}

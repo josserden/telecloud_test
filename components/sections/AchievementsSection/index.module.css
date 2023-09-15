@@ -1,0 +1,94 @@
+.achievements {
+  margin-top: 70px;
+  padding: 60px 0;
+
+  border-radius: 100px 0;
+  background-color: var(--color-gray);
+}
+
+.achievements h2 {
+  margin: 0 0 60px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+
+  font-size: 80px;
+  line-height: 1.1;
+}
+
+.achievementsCounter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0 140px;
+
+  list-style: none;
+  gap: 60px;
+}
+
+.achievementsCounter li {
+  width: 213px;
+  height: 213px;
+}
+
+@media screen and (max-width: 1025px) {
+  .achievements {
+    margin-top: 60px;
+    padding: 60px 0;
+
+    border-radius: 44px 0;
+  }
+
+  .achievements h2 {
+    max-width: 450px;
+    margin-right: auto;
+    margin-bottom: 60px;
+    margin-left: auto;
+
+    text-align: center;
+
+    font-size: 60px;
+  }
+
+  .achievementsCounter {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .achievementsCounter {
+    padding: 0 30px;
+  }
+
+  .achievements h2 {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .achievementsCounter li {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .achievementsCounter {
+    padding: 0 20px;
+    gap: 19px 16px;
+  }
+
+  .achievements h2 {
+    margin: 0 20px 30px 20px;
+
+    font-size: 39px;
+  }
+
+  .achievementsCounter li {
+    width: 138px;
+    height: 138px;
+  }
+}

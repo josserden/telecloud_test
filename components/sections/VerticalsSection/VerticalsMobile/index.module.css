@@ -1,0 +1,85 @@
+.verticalsCardSmall {
+  --delay: 0;
+  display: none;
+
+  list-style: none;
+
+  cursor: pointer;
+  transition: transform 0.55s ease, opacity 0.35s ease-in-out;
+  transition-delay: var(--delay);
+
+  opacity: 0;
+  color: var(--color-white);
+  border-radius: 44px 0;
+  background: var(--verticals-gradient);
+}
+
+.verticalsCardSmall.activeAnimation {
+  transform: translateX(0);
+
+  opacity: 1;
+}
+
+.verticalsCardSmall.blue {
+  background: var(--color-blue);
+}
+
+.verticalsCardSmall.active,
+.verticalsCardSmall.blue.active {
+  color: var(--color-white);
+  background: var(--color-gray);
+}
+
+.verticalCardToggler {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  padding: 30px 20px;
+
+  cursor: pointer;
+
+  color: var(--color-white);
+  border: none;
+  background: none;
+  grid-template-columns: 1fr auto;
+  justify-items: start;
+}
+
+.verticalCardToggler h3 {
+  margin: 0 auto;
+
+  text-transform: uppercase;
+
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.smallX {
+  transform: translateX(-100px);
+}
+
+.middleX {
+  transform: translateX(-120px);
+}
+
+.largeX {
+  transform: translateX(-140px);
+}
+
+@media screen and (max-width: 1025px) {
+  .verticalsCardSmall {
+    display: block;
+  }
+
+  .verticalCardContentTitle {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .verticalsCardContentTitle {
+    max-width: 261px;
+  }
+}

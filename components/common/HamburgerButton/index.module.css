@@ -1,0 +1,128 @@
+.hamburgerButton {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 36px 87px 36px 99px;
+
+  cursor: pointer;
+  animation: button-events forwards;
+  animation-delay: 1.5s;
+  pointer-events: none;
+
+  border: none;
+  border-radius: 0 0 0 44px;
+  background-color: var(--color-blue);
+}
+
+.lineWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 34px;
+  height: 27px;
+
+  animation: 1.5s ease button-enter backwards;
+  /* transition: transform 0.2s ease, opacity 0.2s ease; */
+}
+
+@keyframes button-events {
+  0% {
+    pointer-events: none;
+  }
+  100% {
+    pointer-events: auto;
+  }
+}
+
+@keyframes button-enter {
+  0% {
+    transform: scale(1.2);
+
+    opacity: 1;
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    transform: scale(1);
+
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.line {
+  border-top: 3px solid var(--color-white);
+  /* transition: transform 0.2s ease; */
+}
+
+.hamburgerButton:hover .lineWrapper {
+  transform: scale(1.1);
+}
+
+.hamburgerButton.navBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 30px;
+
+  opacity: 1;
+  border-radius: 0;
+}
+
+.hamburgerButton.navBtn.isActive .lineWrapper {
+  opacity: 1;
+}
+
+.lineTop {
+  transform-origin: top left;
+}
+
+.lineMiddle {
+  align-self: flex-end;
+
+  width: 17px;
+}
+
+.hamburgerButton.isActive .lineWrapper {
+  opacity: 0;
+}
+
+.hamburgerButton.navBtn.isActive .lineTop {
+  transform: translateX(5px) rotate(45deg);
+}
+
+.hamburgerButton.navBtn.isActive .lineMiddle {
+  opacity: 0;
+}
+
+.hamburgerButton.navBtn.isActive .lineBottom {
+  transform: translateY(-13px) rotate(-45deg);
+}
+
+@media screen and (max-width: 1025px) {
+  .hamburgerButton {
+    position: initial;
+
+    display: block;
+
+    padding: 0;
+
+    animation: none;
+    pointer-events: auto;
+
+    background: none;
+  }
+
+  .lineWrapper {
+    transition: none;
+    animation: none;
+  }
+}

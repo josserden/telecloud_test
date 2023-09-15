@@ -1,0 +1,11 @@
+.descriptionContentBottom {
+  margin-top: 60px;
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 19px;
+
+  list-style: none;
+}

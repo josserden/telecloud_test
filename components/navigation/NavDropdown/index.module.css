@@ -1,0 +1,66 @@
+.mobileMenuContent {
+  --height: 0;
+  overflow: hidden;
+
+  max-height: 0;
+
+  transition: max-height 0.3s ease-out;
+  text-align: right;
+}
+
+.menuItemBtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 100%;
+  padding: 0;
+
+  cursor: pointer;
+  text-align: right;
+
+  color: var(--color-white);
+  border: none;
+  background: none;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5;
+  gap: 0 13px;
+}
+
+.mobileMenuContent.active {
+  max-height: var(--height);
+
+  transition: max-height 0.3s ease-in;
+}
+
+.mobileMenuDescription {
+  padding: 40px 20px;
+
+  color: var(--color-black);
+  border-radius: 44px 0px;
+  background-color: var(--color-white);
+}
+
+.subtitle {
+  margin: 0;
+
+  text-align: left;
+
+  color: var(--color-black);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.description {
+  margin: 20px 0 0 0;
+
+  text-align: left;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}

@@ -1,0 +1,96 @@
+.description {
+  --height: 0;
+  overflow: hidden;
+
+  max-height: 0;
+
+  list-style: none;
+
+  transition: max-height 0.45s ease-out;
+  transition-delay: 450ms;
+  grid-column-end: 4;
+  grid-column-start: 1;
+}
+
+.description.active {
+  max-height: var(--height);
+
+  transition-delay: 0ms;
+}
+
+.desktopArrow {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin-bottom: 33px;
+  padding: 0;
+
+  cursor: pointer;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  transform: scale(1.3);
+
+  opacity: 0;
+  border: none;
+  border-radius: 20px 0px;
+  background-color: var(--color-white);
+}
+
+.descriptionWrapper {
+  padding: 20px 0 60px 0;
+
+  transition: clip-path 0.45s ease;
+
+  background-color: var(--color-blue);
+  clip-path: inset(0 0 100% 0);
+}
+
+.descriptionWrapper.activeWrapper {
+  transition-delay: 700ms;
+  clip-path: inset(0);
+}
+
+.descriptionWrapper.activeWrapper .desktopArrow {
+  transition-delay: 700ms;
+  transform: scale(1);
+
+  opacity: 1;
+}
+
+.descriptionWrapper.removeHeight {
+  animation: 0.45s removeActive ease backwards;
+}
+
+@keyframes removeActive {
+  0% {
+    clip-path: inset(0);
+  }
+  50% {
+    clip-path: inset(50% 0 50% 0);
+  }
+  100% {
+    clip-path: inset(0 0 100% 0);
+  }
+}
+
+.descriptionWrapper.removeHeight .descriptionContent {
+  transform: scale(1.3);
+}
+
+.descriptionContent {
+  display: flex;
+  flex-direction: column;
+
+  transition: transform 0.45s ease;
+
+  color: var(--color-white);
+}
+
+@media screen and (max-width: 1281px) {
+  .descriptionWrapper {
+    padding: 20px 60px 60px 60px;
+  }
+}
