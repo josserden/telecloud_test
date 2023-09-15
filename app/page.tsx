@@ -1,32 +1,32 @@
-import React from 'react';
-import dynamic from 'next/dynamic';
-import { i18n } from 'i18n-config';
-import { getDictionary } from 'get-dictionary';
+import React from "react";
+import dynamic from "next/dynamic";
+import { i18n } from "i18n-config";
+import { getDictionary } from "get-dictionary";
 
-import styles from './page.module.css';
+import styles from "./page.module.css";
 
-const HeroSection = dynamic(() => import('components/sections/HeroSection'), {
+const HeroSection = dynamic(() => import("components/sections/HeroSection"), {
   ssr: false,
 });
 
 const VerticalsSection = dynamic(
-  () => import('components/sections/VerticalsSection'),
+  () => import("components/sections/VerticalsSection"),
   { ssr: false },
 );
 
 const AchievementsSection = dynamic(
-  () => import('components/sections/AchievementsSection'),
+  () => import("components/sections/AchievementsSection"),
   { ssr: false },
 );
-const LogoList = dynamic(() => import('components/sections/LogoListSection'), {
+const LogoList = dynamic(() => import("components/sections/LogoListSection"), {
   ssr: false,
 });
 const LocationsSection = dynamic(
-  () => import('components/sections/LocationsSection'),
+  () => import("components/sections/LocationsSection"),
   { ssr: false },
 );
 const HeadlineArticle = dynamic(
-  () => import('components/sections/HeadlineArticle'),
+  () => import("components/sections/HeadlineArticle"),
   { ssr: false },
 );
 
@@ -53,6 +53,7 @@ export default async function Home(): Promise<React.JSX.Element> {
         locationsHeading={locations.heading}
         locationsItems={locations}
       />
+
       <HeadlineArticle
         heading={locations.headline.heading}
         description={locations.headline.description}
