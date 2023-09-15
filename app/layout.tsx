@@ -75,12 +75,16 @@ export default async function RootLayout({
     <html lang="en">
       <head>
         <title>Telecloud Group</title>
+
+        <link rel="preload" href="https://telecloud.b-cdn.net/" as="media" />
+
         <link
           rel="preload"
           href="https://telecloud.b-cdn.net/bg.webm"
           as="video"
           type="video/webm"
         />
+
         <link
           rel="preload"
           href="https://telecloud.b-cdn.net/bg.mp4"
