@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 
-import { type Props } from './types';
-import styles from './index.module.css';
+import { type Props } from "./types";
+import styles from "./index.module.css";
 
 const HeroSection: React.FC<Props> = ({ hero }) => {
   return (
@@ -35,9 +35,9 @@ const HeroSection: React.FC<Props> = ({ hero }) => {
           playsInline
           width={610}
           height={254}
-          poster={'./images/poster.webp'}
+          poster={"./images/poster.webp"}
         >
-          <source src="https://telecloud.b-cdn.net/bg.webm" type="video/webm" />
+          {/*<source src="https://telecloud.b-cdn.net/bg.webm" type="video/webm" />*/}
           <source src="https://telecloud.b-cdn.net/bg.mp4" type="video/mp4" />
         </video>
       </div>
