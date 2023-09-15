@@ -58,6 +58,11 @@ export const metadata = {
     "A TECHNOLOGY GROUP WITH 11 SUBSIDIARIES EMPOWERING BUSINESS ACROSS MULTIPLE INDUSTRIES.",
 };
 
+/*
+*  <source src="https://telecloud.b-cdn.net/bg.webm" type="video/webm" />
+          <source src="https://telecloud.b-cdn.net/bg.mp4" type="video/mp4" />
+* */
+
 export default async function RootLayout({
   children,
 }: {
@@ -70,7 +75,18 @@ export default async function RootLayout({
     <html lang="en">
       <head>
         <title>Telecloud Group</title>
-        <link rel="preload" href={process.env.BASE_DOMAIN_URL} />
+        <link
+          rel="preload"
+          href="https://telecloud.b-cdn.net/bg.webm"
+          as="video"
+          type="video/webm"
+        />
+        <link
+          rel="preload"
+          href="https://telecloud.b-cdn.net/bg.mp4"
+          as="video"
+          type="video/mp4"
+        />
       </head>
 
       <GoogleAnalytics GA_MEASURMENT_ID={GTAG_ID} />
